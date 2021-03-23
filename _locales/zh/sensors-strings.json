@@ -153,6 +153,7 @@
     "barb_fitting.JOYSTICK_BUTTON_LEFT|block": "左摇杆按键",
     "barb_fitting.JOYSTICK_BUTTON_RIGHT|block": "右摇杆按键",
     "sensors.Gamepad_button|block": "游戏手柄按键 %BUTS 是否被按下",
+    "sensors.Gamepad_shock|block": "游戏手柄震动频率 %shock ",
     
     
     "key_status.PRESS_DOWN|block": "按下",

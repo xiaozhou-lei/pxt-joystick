@@ -1935,6 +1935,21 @@ namespace sensors {
        return false;
     }
 
+
+    /**
+    * 双摇杆手柄
+    */
+   //% blockId=Gamepad_shock block="Gamepad_shock Start of %freq vibration "  group="双摇杆手柄"
+   //% weight=74
+   //% subcategory="基础输入模块"
+   //% inlineInputMode=inline
+    export function Gamepad_shock( shock: number): void {
+        let a = AnalogPin.P1;
+        pins.analogWritePin( a , shock)
+    }
+
+
+
     /**
     * 双摇杆手柄
     */
