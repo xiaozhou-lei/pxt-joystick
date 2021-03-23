@@ -1938,9 +1938,9 @@ namespace sensors {
     //% blockId=Gamepad_button block="Gamepad_button pin %BUTS"   group="双摇杆手柄"
     //% weight=74
     //% subcategory="基础输入模块"
-    export function Gamepad_button(BUTS: ABtub , pin: DigitalPin): boolean {
-        pins.digitalWritePin(Pin, 0)
+    export function Gamepad_button(BUTS: ABtub): boolean {
         let a = BUTS
+        pins.digitalWritePin(a, 0)
         if (pins.digitalReadPin(a) == 1) {
             return false;
         } else {
