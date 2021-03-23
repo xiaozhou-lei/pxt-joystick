@@ -1921,19 +1921,19 @@ namespace sensors {
        return false;
    }
 
-   /**
-    * 双摇杆手柄
-    */
-   //% blockId=Gamepad_Status block="Gamepad_Status %button whether %status state" group="双摇杆手柄"
-   //% weight=74
-   //% subcategory="基础输入模块"
-   //% inlineInputMode=inline
-   export function Gamepad_Status(button: barb_fitting , status: key_status): boolean{
-       if(Get_Button_Status(button) == status){
-           return true;
-       }
-       return false;
-    }
+//    /**
+//     * 双摇杆手柄
+//     */
+//    //% blockId=Gamepad_Status block="Gamepad_Status %button whether %status state" group="双摇杆手柄"
+//    //% weight=74
+//    //% subcategory="基础输入模块"
+//    //% inlineInputMode=inline
+//    export function Gamepad_Status(button: barb_fitting , status: key_status): boolean{
+//        if(Get_Button_Status(button) == status){
+//            return true;
+//        }
+//        return false;
+//     }
 
 
     /**
