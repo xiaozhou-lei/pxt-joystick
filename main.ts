@@ -1940,7 +1940,7 @@ namespace sensors {
     //% subcategory="基础输入模块"
     export function Gamepad_button(BUTS: ABtub , pin: DigitalPin): boolean {
         pins.digitalWritePin(Pin, 0)
-        let a = ABtub
+        let a = BUTS
         if (pins.digitalReadPin(a) == 1) {
             return false;
         } else {
