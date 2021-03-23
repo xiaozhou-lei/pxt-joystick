@@ -243,14 +243,14 @@ enum key_status {
     PRESS_DOWN = 0,   //按下
     //% block="UP"
     PRESS_UP = 1,    //释放
-    //% block="CLICK1"
-    SINGLE_CLICK = 3,     //单击
-    //% block="CLICK2"
-    DOUBLE_CLICK = 4,    //双击
-    //% block="HOLD"
-    LONG_PRESS_HOLD = 6,    //长按
-    //% block="PRESS"
-    NONE_PRESS = 8,      //未按
+    // //% block="CLICK1"
+    // SINGLE_CLICK = 3,     //单击
+    // //% block="CLICK2"
+    // DOUBLE_CLICK = 4,    //双击
+    // //% block="HOLD"
+    // LONG_PRESS_HOLD = 6,    //长按
+    // //% block="PRESS"
+    // NONE_PRESS = 8,      //未按
 }
 
 enum Shaft{
@@ -1921,19 +1921,19 @@ namespace sensors {
        return false;
    }
 
-//    /**
-//     * 双摇杆手柄
-//     */
-//    //% blockId=Gamepad_Status block="Gamepad_Status %button whether %status state" group="双摇杆手柄"
-//    //% weight=74
-//    //% subcategory="基础输入模块"
-//    //% inlineInputMode=inline
-//    export function Gamepad_Status(button: barb_fitting , status: key_status): boolean{
-//        if(Get_Button_Status(button) == status){
-//            return true;
-//        }
-//        return false;
-//     }
+   /**
+    * 双摇杆手柄
+    */
+   //% blockId=Gamepad_Status block="Gamepad_Status %button whether %status state" group="双摇杆手柄"
+   //% weight=74
+   //% subcategory="基础输入模块"
+   //% inlineInputMode=inline
+   export function Gamepad_Status(button: barb_fitting , status: key_status): boolean{
+       if(Get_Button_Status(button) == status){
+           return true;
+       }
+       return false;
+    }
 
 
     /**
